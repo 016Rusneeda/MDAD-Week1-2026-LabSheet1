@@ -1264,6 +1264,10 @@ class ProfilePage extends StatelessWidget {
 
 6. นำโค้ดที่ได้ Copy ไปทดสอบใน Flutter Project
 
+### ผลลัพธ์การทดลอง
+<img width="1920" height="1035" alt="image" src="https://github.com/user-attachments/assets/34dd2811-bb84-4771-b670-0f6d6c9563ae" />
+
+
 #### ทดลองที่ 3: Prompt Engineering
 
 ทดลองปรับ Prompt เพื่อให้ได้ผลลัพธ์ที่ดีขึ้น:
