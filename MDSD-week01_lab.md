@@ -1284,6 +1284,9 @@ class ProfilePage extends StatelessWidget {
 
 ให้โค้ดที่สมบูรณ์และใช้งานได้เลย ไม่ต้อง Comment อธิบาย
 ```
+### ผลลัพธ์การทดลอง
+<img width="1536" height="811" alt="image" src="https://github.com/user-attachments/assets/04a49de6-25c3-4c79-a108-6274e1268eae" />
+
 
 > 🔍 **เปรียบเทียบ:** ผลลัพธ์จาก Prompt แบบ Simple vs Detailed ต่างกันอย่างไร?
 
