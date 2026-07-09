@@ -1761,28 +1761,60 @@ Android SDK Version: _______________
 
 ### 3.2 Screenshot ของ Flutter App
 
-```
-[แนบ Screenshot ของ Profile Card App ที่สร้าง]
-```
+
+<img width="1920" height="1000" alt="image" src="https://github.com/user-attachments/assets/eea0e18b-42dc-4162-83f1-d48525fea7aa" />
+
+
 
 **Widget Tree ที่วาด:**
 
 ```
-(วาด Widget Tree ของแอปที่สร้างด้วยมือ)
-
-MaterialApp
-└── ?
-    └── ?
-        └── ...
+MyApp
+└── MaterialApp
+    └── ProfilePage
+        └── Scaffold
+            ├── AppBar
+            │   └── Text ('โปรไฟล์ของฉัน')
+            └── SingleChildScrollView
+                └── Padding
+                    └── Column
+                        ├── SizedBox
+                        ├── CircleAvatar
+                        │   └── Icon (Icons.person)
+                        ├── SizedBox
+                        ├── Text ('Rusneeda Kuwing')
+                        ├── SizedBox
+                        ├── Text ('รหัสนักศึกษา: 67030195')
+                        ├── SizedBox
+                        ├── Card
+                        │   └── Padding
+                        │       └── Column
+                        │           ├── Row (ข้อมูล: คณะ)
+                        │           ├── Divider
+                        │           ├── Row (ข้อมูล: ภาควิชา)
+                        │           ├── Divider
+                        │           ├── Row (ข้อมูล: สาขา)
+                        │           ├── Divider
+                        │           ├── Row (ข้อมูล: อีเมล)
+                        │           ├── Divider
+                        │           ├── Row (ข้อมูล: วิชาที่ชอบ)
+                        │           ├── Divider
+                        │           └── Row (ข้อมูล: เป้าหมาย)
+                        ├── SizedBox
+                        ├── WeatherCard (การ์ดสภาพอากาศ)
+                        ├── SizedBox
+                        └── ElevatedButton.icon (ปุ่มกดไปหน้า AI Chat)
+                            ├── Icon (Icons.smart_toy)
+                            └── Text ('ทดลอง AI Chat')
 ```
 
 ### 3.3 การเปรียบเทียบ Hot Reload vs Hot Restart
 
 | รายการ | Hot Reload (r) | Hot Restart (R) |
 |---|---|---|
-| ความเร็ว | | |
-| State ถูก Reset? | | |
-| ใช้เมื่อไหร่ | | |
+| ความเร็ว |เร็วมาก |ช้ากว่า Hot Reload |
+| State ถูก Reset? | ไม่ reset - State ยังอยู่เหมือนเดิม  | ถูก reset - State หายทั้งหมด|
+| ใช้เมื่อไหร่ | ช้ตอนปรับแต่งหน้าตา UI, เปลี่ยนสี, แก้ไขข้อความ, แก้ไขบั๊กเล็กๆ น้อยๆ หรือแก้ไขโค้ดที่อยู่ภายในฟังก์ชัน build | ใช้ตอนแก้ไขโครงสร้างหลักของแอป, เปลี่ยนแปลงไฟล์ตั้งค่า, แก้ไขฟังก์ชัน initState, เพิ่มแพ็กเกจใหม่ใน pubspec.yaml หรือต้องการล้างข้อมูลเพื่อเริ่มทดสอบใหม่|
 
 ### 3.4 ผลการทดลอง Prompt Engineering
 
